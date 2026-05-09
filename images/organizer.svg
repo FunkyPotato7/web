@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" role="img" aria-labelledby="title">
+  <title id="title">Настільний органайзер Grid</title>
+  <rect width="420" height="315" fill="#f6efe3"/>
+  <circle cx="210" cy="158" r="96" fill="#eadfcb"/>
+  <rect x="128" y="107" width="164" height="126" rx="12" fill="#ffffff"/>
+  <rect x="146" y="128" width="42" height="85" rx="8" fill="#1f4b45"/>
+  <rect x="200" y="128" width="74" height="22" rx="6" fill="#d57a44"/>
+  <rect x="200" y="164" width="74" height="49" rx="8" fill="#dfe8e1"/>
+  <rect x="128" y="228" width="164" height="16" rx="8" fill="#8b6651"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" role="img" aria-labelledby="title">
+  <title id="title">Ароматична свічка Calm</title>
+  <rect width="420" height="315" fill="#f6efe3"/>
+  <circle cx="210" cy="158" r="96" fill="#dfe8e1"/>
+  <path d="M210 70c20 25 14 47 0 62-14-15-20-37 0-62z" fill="#d57a44"/>
+  <path d="M210 90c10 15 7 27 0 36-7-9-10-21 0-36z" fill="#ffe3a1"/>
+  <rect x="142" y="132" width="136" height="113" rx="18" fill="#ffffff"/>
+  <rect x="158" y="156" width="104" height="55" rx="8" fill="#1f4b45"/>
+  <text x="210" y="190" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Calm</text>
+</svg>

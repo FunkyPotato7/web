@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img" aria-labelledby="title desc">
+  <title id="title">Куточок кімнати</title>
+  <desc id="desc">Полиця, лампа, картина і декоративні речі в кімнаті.</desc>
+  <rect width="560" height="420" fill="#fffaf1"/>
+  <rect y="298" width="560" height="122" fill="#eadfcb"/>
+  <rect x="63" y="74" width="150" height="104" rx="8" fill="#dfe8e1"/>
+  <rect x="86" y="96" width="104" height="60" rx="5" fill="#ffffff"/>
+  <rect x="284" y="82" width="188" height="18" rx="5" fill="#8b6651"/>
+  <rect x="302" y="46" width="34" height="36" rx="5" fill="#d57a44"/>
+  <rect x="357" y="38" width="42" height="44" rx="5" fill="#1f4b45"/>
+  <rect x="415" y="54" width="38" height="28" rx="5" fill="#c4b299"/>
+  <rect x="266" y="196" width="142" height="102" rx="12" fill="#ffffff"/>
+  <rect x="286" y="216" width="102" height="18" rx="5" fill="#dfe8e1"/>
+  <rect x="286" y="250" width="68" height="18" rx="5" fill="#dfe8e1"/>
+  <rect x="95" y="236" width="24" height="72" rx="9" fill="#8b6651"/>
+  <path d="M55 232h104l-20-60H75z" fill="#f0c36a"/>
+  <circle cx="107" cy="247" r="30" fill="#ffe3a1" opacity=".55"/>
+  <rect x="438" y="232" width="56" height="76" rx="20" fill="#d57a44"/>
+  <path d="M466 214c-34-28-22-65 8-86 28 29 25 64-8 86z" fill="#6e8f67"/>
+  <path d="M468 214c-42-9-58-41-42-74 39 10 56 40 42 74z" fill="#52785e"/>
+  <rect x="64" y="320" width="430" height="16" rx="8" fill="#d6c6ad"/>
+</svg>

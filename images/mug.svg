@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" role="img" aria-labelledby="title">
+  <title id="title">Керамічна чашка Nord</title>
+  <rect width="420" height="315" fill="#f6efe3"/>
+  <circle cx="210" cy="158" r="96" fill="#eadfcb"/>
+  <rect x="137" y="109" width="126" height="112" rx="20" fill="#ffffff"/>
+  <path d="M263 134h29c28 0 28 60 0 60h-29v-20h24c12 0 12-20 0-20h-24z" fill="#ffffff"/>
+  <rect x="153" y="130" width="88" height="10" rx="5" fill="#d57a44"/>
+  <rect x="167" y="221" width="96" height="14" rx="7" fill="#c4b299"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" role="img" aria-labelledby="title">
+  <title id="title">Декоративна рослина Olive</title>
+  <rect width="420" height="315" fill="#f6efe3"/>
+  <circle cx="210" cy="158" r="96" fill="#eadfcb"/>
+  <path d="M207 176c-46-20-58-62-34-104 42 23 54 62 34 104z" fill="#52785e"/>
+  <path d="M213 176c-16-48 6-86 52-101 18 50-2 88-52 101z" fill="#88a67b"/>
+  <path d="M210 187c-44-6-70-35-64-74 43 6 68 36 64 74z" fill="#6e8f67"/>
+  <rect x="164" y="184" width="94" height="65" rx="14" fill="#d57a44"/>
+  <rect x="154" y="238" width="114" height="16" rx="8" fill="#8b6651"/>
+</svg>

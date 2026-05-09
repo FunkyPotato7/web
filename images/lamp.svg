@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 315" role="img" aria-labelledby="title">
+  <title id="title">Настільна лампа Luma</title>
+  <rect width="420" height="315" fill="#f6efe3"/>
+  <circle cx="210" cy="158" r="96" fill="#e2eadf"/>
+  <path d="M146 86h128l-22 78h-84z" fill="#f0c36a"/>
+  <rect x="202" y="160" width="18" height="83" rx="8" fill="#1f4b45"/>
+  <rect x="158" y="238" width="106" height="20" rx="10" fill="#1f4b45"/>
+  <circle cx="211" cy="178" r="38" fill="#ffe3a1" opacity=".55"/>
+</svg>
