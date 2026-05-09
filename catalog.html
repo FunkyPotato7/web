@@ -21,58 +21,99 @@
     <section class="page-intro">
       <p class="eyebrow">Каталог</p>
       <h1>Добірка для дому</h1>
-      <p>Базові речі для затишного інтер'єру: світло, кераміка, текстиль і декор.</p>
+      <p>Локальний каталог Urban Nest та зовнішній каталог із FakeStoreAPI в одному інтерфейсі.</p>
     </section>
 
     <section class="section">
-      <div class="product-grid catalog-grid">
-        <article class="product-card" data-product="lamp" tabindex="0">
-          <img src="images/lamp.svg" alt="Настільна лампа Luma">
-          <h3>Лампа Luma</h3>
-          <p>Компактна лампа з теплим розсіяним світлом.</p>
-          <span class="price">1 290 грн</span>
-          <button class="small-button open-product" type="button">Переглянути</button>
-        </article>
+      <div class="catalog-tabs" role="tablist" aria-label="Перемикання каталогу">
+        <button class="catalog-tab active" id="localTab" type="button" role="tab" aria-selected="true" aria-controls="localCatalog">Urban Nest</button>
+        <button class="catalog-tab" id="apiTab" type="button" role="tab" aria-selected="false" aria-controls="apiCatalog">FakeStoreAPI</button>
+      </div>
 
-        <article class="product-card" data-product="mug" tabindex="0">
-          <img src="images/mug.svg" alt="Керамічна чашка Nord">
-          <h3>Чашка Nord</h3>
-          <p>Керамічна чашка з матовим покриттям.</p>
-          <span class="price">420 грн</span>
-          <button class="small-button open-product" type="button">Переглянути</button>
-        </article>
+      <div class="catalog-panel active" id="localCatalog" role="tabpanel" aria-labelledby="localTab">
+        <div class="product-grid catalog-grid">
+          <article class="product-card" data-local-product="lamp" tabindex="0">
+            <img src="images/lamp.svg" alt="Настільна лампа Luma">
+            <h3>Лампа Luma</h3>
+            <p>Компактна лампа з теплим розсіяним світлом.</p>
+            <span class="price">1 290 грн</span>
+            <button class="small-button open-product" type="button">Переглянути</button>
+          </article>
 
-        <article class="product-card" data-product="candle" tabindex="0">
-          <img src="images/candle.svg" alt="Ароматична свічка Calm">
-          <h3>Свічка Calm</h3>
-          <p>Ароматична свічка у скляній банці.</p>
-          <span class="price">560 грн</span>
-          <button class="small-button open-product" type="button">Переглянути</button>
-        </article>
+          <article class="product-card" data-local-product="mug" tabindex="0">
+            <img src="images/mug.svg" alt="Керамічна чашка Nord">
+            <h3>Чашка Nord</h3>
+            <p>Керамічна чашка з матовим покриттям.</p>
+            <span class="price">420 грн</span>
+            <button class="small-button open-product" type="button">Переглянути</button>
+          </article>
 
-        <article class="product-card" data-product="plant" tabindex="0">
-          <img src="images/plant.svg" alt="Декоративна рослина Olive">
-          <h3>Рослина Olive</h3>
-          <p>Декоративний акцент для полиці або столу.</p>
-          <span class="price">730 грн</span>
-          <button class="small-button open-product" type="button">Переглянути</button>
-        </article>
+          <article class="product-card" data-local-product="candle" tabindex="0">
+            <img src="images/candle.svg" alt="Ароматична свічка Calm">
+            <h3>Свічка Calm</h3>
+            <p>Ароматична свічка у скляній банці.</p>
+            <span class="price">560 грн</span>
+            <button class="small-button open-product" type="button">Переглянути</button>
+          </article>
 
-        <article class="product-card" data-product="pillow" tabindex="0">
-          <img src="images/pillow.svg" alt="Подушка Soft Square">
-          <h3>Подушка Soft Square</h3>
-          <p>М'яка декоративна подушка у спокійному відтінку.</p>
-          <span class="price">680 грн</span>
-          <button class="small-button open-product" type="button">Переглянути</button>
-        </article>
+          <article class="product-card" data-local-product="plant" tabindex="0">
+            <img src="images/plant.svg" alt="Декоративна рослина Olive">
+            <h3>Рослина Olive</h3>
+            <p>Декоративний акцент для полиці або столу.</p>
+            <span class="price">730 грн</span>
+            <button class="small-button open-product" type="button">Переглянути</button>
+          </article>
 
-        <article class="product-card" data-product="organizer" tabindex="0">
-          <img src="images/organizer.svg" alt="Настільний органайзер Grid">
-          <h3>Органайзер Grid</h3>
-          <p>Місце для нотаток, ручок і дрібних речей.</p>
-          <span class="price">510 грн</span>
-          <button class="small-button open-product" type="button">Переглянути</button>
-        </article>
+          <article class="product-card" data-local-product="pillow" tabindex="0">
+            <img src="images/pillow.svg" alt="Подушка Soft Square">
+            <h3>Подушка Soft Square</h3>
+            <p>М'яка декоративна подушка у спокійному відтінку.</p>
+            <span class="price">680 грн</span>
+            <button class="small-button open-product" type="button">Переглянути</button>
+          </article>
+
+          <article class="product-card" data-local-product="organizer" tabindex="0">
+            <img src="images/organizer.svg" alt="Настільний органайзер Grid">
+            <h3>Органайзер Grid</h3>
+            <p>Місце для нотаток, ручок і дрібних речей.</p>
+            <span class="price">510 грн</span>
+            <button class="small-button open-product" type="button">Переглянути</button>
+          </article>
+        </div>
+      </div>
+
+      <div class="catalog-panel" id="apiCatalog" role="tabpanel" aria-labelledby="apiTab" hidden>
+        <form class="api-filter-form" id="catalogFilters">
+          <label>
+            Категорія
+            <select id="categoryFilter" name="category">
+              <option value="">Усі категорії</option>
+            </select>
+          </label>
+
+          <label>
+            Кількість
+            <select id="limitFilter" name="limit">
+              <option value="6">6 товарів</option>
+              <option value="9">9 товарів</option>
+              <option value="12">12 товарів</option>
+              <option value="20">20 товарів</option>
+            </select>
+          </label>
+
+          <label>
+            Сортування
+            <select id="sortFilter" name="sort">
+              <option value="asc">За зростанням</option>
+              <option value="desc">За спаданням</option>
+            </select>
+          </label>
+
+          <button class="button" type="submit">Оновити</button>
+        </form>
+
+        <div class="api-status" id="catalogStatus" role="status">Завантаження товарів...</div>
+        <div class="product-grid catalog-grid" id="apiProductGrid"></div>
       </div>
     </section>
   </main>
@@ -98,6 +139,7 @@
         <h2 id="modalTitle">Лампа Luma</h2>
         <p id="modalDescription">Компактна лампа з теплим розсіяним світлом.</p>
         <strong class="modal-price" id="modalPrice">1 290 грн</strong>
+        <p class="modal-category" id="modalCategory">Категорія</p>
         <a class="button" href="contacts.html">Замовити</a>
       </div>
     </section>
