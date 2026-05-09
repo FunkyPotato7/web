@@ -26,59 +26,86 @@
 
     <section class="section">
       <div class="product-grid catalog-grid">
-        <article class="product-card">
+        <article class="product-card" data-product="lamp" tabindex="0">
           <img src="images/lamp.svg" alt="Настільна лампа Luma">
           <h3>Лампа Luma</h3>
           <p>Компактна лампа з теплим розсіяним світлом.</p>
           <span class="price">1 290 грн</span>
-          <a class="small-button" href="contacts.html">Замовити</a>
+          <button class="small-button open-product" type="button">Переглянути</button>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-product="mug" tabindex="0">
           <img src="images/mug.svg" alt="Керамічна чашка Nord">
           <h3>Чашка Nord</h3>
           <p>Керамічна чашка з матовим покриттям.</p>
           <span class="price">420 грн</span>
-          <a class="small-button" href="contacts.html">Замовити</a>
+          <button class="small-button open-product" type="button">Переглянути</button>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-product="candle" tabindex="0">
           <img src="images/candle.svg" alt="Ароматична свічка Calm">
           <h3>Свічка Calm</h3>
           <p>Ароматична свічка у скляній банці.</p>
           <span class="price">560 грн</span>
-          <a class="small-button" href="contacts.html">Замовити</a>
+          <button class="small-button open-product" type="button">Переглянути</button>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-product="plant" tabindex="0">
           <img src="images/plant.svg" alt="Декоративна рослина Olive">
           <h3>Рослина Olive</h3>
           <p>Декоративний акцент для полиці або столу.</p>
           <span class="price">730 грн</span>
-          <a class="small-button" href="contacts.html">Замовити</a>
+          <button class="small-button open-product" type="button">Переглянути</button>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-product="pillow" tabindex="0">
           <img src="images/pillow.svg" alt="Подушка Soft Square">
           <h3>Подушка Soft Square</h3>
           <p>М'яка декоративна подушка у спокійному відтінку.</p>
           <span class="price">680 грн</span>
-          <a class="small-button" href="contacts.html">Замовити</a>
+          <button class="small-button open-product" type="button">Переглянути</button>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-product="organizer" tabindex="0">
           <img src="images/organizer.svg" alt="Настільний органайзер Grid">
           <h3>Органайзер Grid</h3>
           <p>Місце для нотаток, ручок і дрібних речей.</p>
           <span class="price">510 грн</span>
-          <a class="small-button" href="contacts.html">Замовити</a>
+          <button class="small-button open-product" type="button">Переглянути</button>
         </article>
       </div>
     </section>
   </main>
 
+  <div class="product-modal" id="productModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-panel" aria-label="Детальна інформація про товар">
+      <button class="modal-close" type="button" data-close-modal aria-label="Закрити">&times;</button>
+
+      <div class="gallery">
+        <button class="gallery-control gallery-prev" type="button" aria-label="Попереднє зображення">&#8249;</button>
+        <img id="galleryImage" src="images/lamp.svg" alt="Лампа Luma">
+        <button class="gallery-control gallery-next" type="button" aria-label="Наступне зображення">&#8250;</button>
+      </div>
+
+      <div class="gallery-meta">
+        <span id="galleryCounter">1 / 3</span>
+        <div class="gallery-dots" id="galleryDots" aria-label="Індикатори зображень"></div>
+      </div>
+
+      <div class="modal-copy">
+        <p class="eyebrow">Деталі товару</p>
+        <h2 id="modalTitle">Лампа Luma</h2>
+        <p id="modalDescription">Компактна лампа з теплим розсіяним світлом.</p>
+        <strong class="modal-price" id="modalPrice">1 290 грн</strong>
+        <a class="button" href="contacts.html">Замовити</a>
+      </div>
+    </section>
+  </div>
+
   <footer class="site-footer">
-    <p>&copy; 2026 Urban Nest. Навчальний проєкт для лабораторної роботи №1.</p>
+    <p>&copy; 2026 Urban Nest. Навчальний проєкт з вебпрограмування.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
