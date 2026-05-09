@@ -254,9 +254,11 @@ h3 {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(280px, 520px) minmax(260px, 390px);
-  gap: 24px;
-  width: min(100%, 980px);
+  grid-template-columns: minmax(300px, 626px) minmax(280px, 430px);
+  align-items: start;
+  column-gap: 30px;
+  row-gap: 12px;
+  width: min(100%, 1180px);
   max-height: calc(100vh - 48px);
   overflow: auto;
   padding: 24px;
@@ -289,6 +291,8 @@ h3 {
 
 .gallery {
   position: relative;
+  grid-column: 1;
+  grid-row: 1;
   align-self: start;
   overflow: hidden;
   border: 1px solid #e1dacd;
@@ -338,7 +342,9 @@ h3 {
   justify-content: space-between;
   gap: 16px;
   grid-column: 1 / 2;
-  margin-top: -8px;
+  grid-row: 2;
+  margin-top: 0;
+  padding: 0 2px;
   color: #5c5c5c;
   font-weight: 700;
 }
@@ -363,8 +369,10 @@ h3 {
 }
 
 .modal-copy {
-  align-self: center;
-  padding-right: 32px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: start;
+  padding: 72px 42px 0 0;
 }
 
 .modal-copy h2 {
@@ -505,10 +513,13 @@ h3 {
 
   .gallery-meta {
     grid-column: auto;
+    grid-row: auto;
   }
 
   .modal-copy {
-    padding-right: 0;
+    grid-column: auto;
+    grid-row: auto;
+    padding: 0;
   }
 }
 
