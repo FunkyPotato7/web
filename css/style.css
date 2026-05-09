@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -224,6 +228,122 @@ h3 {
   min-height: 38px;
   padding: 8px 14px;
   font-size: 14px;
+}
+
+.form-section {
+  background: #efe8da;
+}
+
+.decor-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 520px) minmax(280px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.decor-form,
+.decor-preview,
+.form-result {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e1dacd;
+  border-radius: 8px;
+}
+
+.decor-form {
+  display: grid;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  gap: 7px;
+}
+
+.form-row label,
+.form-group legend {
+  color: #263f3a;
+  font-weight: 800;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  min-height: 44px;
+  padding: 11px 13px;
+  color: #242424;
+  background: #fbfaf7;
+  border: 1px solid #d8d0c2;
+  border-radius: 6px;
+  font: inherit;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #1f4b45;
+}
+
+.form-row input.is-invalid,
+.form-row select.is-invalid {
+  border-color: #c2452d;
+}
+
+.field-error {
+  min-height: 20px;
+  color: #c2452d;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-group {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.form-group input {
+  accent-color: #1f4b45;
+}
+
+.decor-preview {
+  display: grid;
+  grid-template-columns: minmax(170px, 260px) minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+}
+
+.decor-preview img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #f1eadc;
+  border: 1px solid #e1dacd;
+  border-radius: 8px;
+}
+
+.form-result {
+  width: 100%;
+}
+
+.form-result h3 {
+  font-size: 26px;
+}
+
+.form-result p {
+  margin-bottom: 10px;
 }
 
 .modal-open {
@@ -493,7 +613,9 @@ h3 {
   .hero,
   .split-section,
   .contact-layout,
-  .modal-panel {
+  .modal-panel,
+  .decor-layout,
+  .decor-preview {
     grid-template-columns: 1fr;
   }
 
@@ -521,6 +643,7 @@ h3 {
     grid-row: auto;
     padding: 0;
   }
+
 }
 
 @media (max-width: 560px) {

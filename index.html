@@ -61,6 +61,89 @@
       </div>
     </section>
 
+    <section class="section form-section">
+      <div class="section-heading">
+        <p class="eyebrow">Підбір декору</p>
+        <h2>Зберемо ідею для вашого простору</h2>
+      </div>
+
+      <div class="decor-layout">
+        <div class="decor-form-column">
+          <form class="decor-form" id="decorForm" novalidate>
+            <div class="form-row">
+              <label for="clientName">Ім'я</label>
+              <input type="text" id="clientName" name="clientName" placeholder="Наприклад, Андрій">
+              <span class="field-error" data-error-for="clientName"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="clientCity">Місто</label>
+              <input type="text" id="clientCity" name="clientCity" placeholder="Наприклад, Київ">
+              <span class="field-error" data-error-for="clientCity"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="roomType">Кімната</label>
+              <select id="roomType" name="roomType">
+                <option value="">Оберіть кімнату</option>
+                <option value="living">Вітальня</option>
+                <option value="desk">Робочий куточок</option>
+                <option value="bedroom">Спальня</option>
+              </select>
+              <span class="field-error" data-error-for="roomType"></span>
+            </div>
+
+            <fieldset class="form-group">
+              <legend>Бюджет</legend>
+              <label>
+                <input type="radio" name="budget" value="до 1000 грн">
+                до 1000 грн
+              </label>
+              <label>
+                <input type="radio" name="budget" value="1000-2500 грн">
+                1000-2500 грн
+              </label>
+              <label>
+                <input type="radio" name="budget" value="2500+ грн">
+                2500+ грн
+              </label>
+              <span class="field-error" data-error-for="budget"></span>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <legend>Що додати в підбір?</legend>
+              <label>
+                <input type="checkbox" name="items" value="Лампа">
+                Лампа
+              </label>
+              <label>
+                <input type="checkbox" name="items" value="Кераміка">
+                Кераміка
+              </label>
+              <label>
+                <input type="checkbox" name="items" value="Текстиль">
+                Текстиль
+              </label>
+              <span class="field-error" data-error-for="items"></span>
+            </fieldset>
+
+            <button class="button" type="submit">Отримати підбір</button>
+          </form>
+
+          <div class="form-result" id="formResult" hidden></div>
+        </div>
+
+        <aside class="decor-preview" id="decorPreview" aria-live="polite">
+          <img id="roomPreviewImage" src="images/hero-room.svg" alt="Приклад інтер'єру Urban Nest">
+          <div>
+            <p class="eyebrow">Динамічний блок</p>
+            <h3 id="roomPreviewTitle">Оберіть кімнату</h3>
+            <p id="roomPreviewText">Після вибору кімнати тут зміниться зображення та коротка рекомендація.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
     <section class="banner">
       <h2>Маленькі речі. Великий настрій.</h2>
       <p>Підбираємо декор так, щоб його легко було поєднувати між собою.</p>
@@ -68,7 +151,8 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Urban Nest. Навчальний проєкт для лабораторної роботи №1.</p>
+    <p>&copy; 2026 Urban Nest. Навчальний проєкт з вебпрограмування.</p>
   </footer>
+  <script src="form.js"></script>
 </body>
 </html>
