@@ -163,6 +163,13 @@ h3 {
   transform: translateY(-2px);
 }
 
+.button:disabled,
+.small-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.68;
+  transform: none;
+}
+
 .section,
 .page-intro,
 .split-section,
@@ -449,6 +456,36 @@ h3 {
 
 .form-result p {
   margin-bottom: 10px;
+}
+
+.form-result.error {
+  border-color: #c2452d;
+}
+
+.json-preview {
+  margin: 16px 0;
+  padding: 14px;
+  background: #fbfaf7;
+  border: 1px solid #e1dacd;
+  border-radius: 8px;
+}
+
+.json-preview summary {
+  color: #1f4b45;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.json-preview pre {
+  max-height: 260px;
+  overflow: auto;
+  margin: 12px 0 0;
+  padding: 12px;
+  color: #242424;
+  background: #f1eadc;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: pre-wrap;
 }
 
 .modal-open {
